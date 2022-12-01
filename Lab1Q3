@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+    float a;
+    int b;
+    printf("Enter a real number: ");
+    scanf("%f",&a);
+    printf("Enter a number:");
+    scanf("%d",&b);
+    b=a;
+    if(b==a){
+    printf("The floor value is %d.",b);
+    printf("\nThe ceiling value is %d ",b);
+    }
+    else if(b<a){
+        
+        printf("The floor value is %d.",b);
+        printf("\nThe ceiling value is %d.",b+1);
+    }
+    else{
+        printf("The ceiling value is %d.",b);
+        printf("\nThe floor value is %d.",b-1);
+    }
+    return 0;
+
+}
